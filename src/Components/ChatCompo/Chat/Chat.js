@@ -5,11 +5,11 @@ import ChatHeader from '../ChatHeader/ChatHeader'
 import './Chat.css'
 
 
-function Chat() {
+function Chat({ messages }) {
     return (
         <div className="chat">
             <ChatHeader />
-            <ChatBody />
+            <ChatBody messages={messages} />
             <ChatFooter />
         </div>
     )
